@@ -38,7 +38,7 @@ def attackbonus(level,ability,attack,modattack)
   elsif ability >=11
     modattack = attack + 1
   end
-  puts "Total Attack roll #{attack}"
+  puts "Total Attack roll #{modattack}"
 end
 
 def profbonus(level,attack,modattack,damage,ability,moddamage,totaldamage)
