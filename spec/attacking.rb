@@ -55,7 +55,7 @@ end
   puts "Please enter Attack Ability score"
   ability = gets.to_i
   moddamage = 0
-  totaldamage = moddamage
+  #totaldamage = moddamage
 5.times do
   attack = rand(16..20)
   damage = rand(1..8)
