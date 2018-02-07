@@ -44,7 +44,7 @@ def hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
   elsif puts "You miss"
   end
     totaldamage = totaldamage - moddamage
-  puts"----------------- #{totaldamage}"
+  puts"-----HP Remaining-- #{totaldamage}"
 end
 
 #1.times do
