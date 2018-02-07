@@ -50,6 +50,7 @@ def profbonus(level,attack,damage,ability,moddamage,totaldamage)
     #elsif level >= 1
     #  levelattack = attack + 2
     #end
+  hitmonster?(attack,damage,moddamage,totaldamage)
   attackbonus(level,ability,attack)
   #  if ability >=19
   #    modattack = 5
@@ -64,7 +65,7 @@ def profbonus(level,attack,damage,ability,moddamage,totaldamage)
   #  end
     #fullattack = modattack + attack
     #puts "Total Attack roll #{attack}"
-    hitmonster?(attack,damage,moddamage,totaldamage)
+    #hitmonster?(attack,damage,moddamage,totaldamage)
   end
 
 
