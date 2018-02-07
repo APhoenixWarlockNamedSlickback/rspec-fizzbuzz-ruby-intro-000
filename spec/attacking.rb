@@ -62,5 +62,5 @@ end
   attackrole(attack)
   #fullattack = modattack + levelattack
   profbonus(level,attack,damage,ability,moddamage,totaldamage)
-  hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
+  #hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
 end
