@@ -28,8 +28,8 @@ def profbonus(level,attack,ability,fullattack)
     elsif ability >=11
       modattack =1
     end
-    fullattack = modattack + levelattack
-    puts "Total Attack roll #{fullattack}"
+    #fullattack = modattack + levelattack
+    #puts "Total Attack roll #{fullattack}"
     #hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
   end
 
@@ -63,5 +63,7 @@ end
   damage = rand(1..8)
   attackrole(attack)
   profbonus(level,attack,ability,fullattack)
+  fullattack = modattack + levelattack
+  puts "Total Attack roll #{fullattack}"
   hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
 end
