@@ -9,7 +9,17 @@ def critorfail?(attack)
   end
 end
 
-def levelbonus(level,attack)
+#def levelbonus(level,attack)
+#  if level >=9
+#    attack += 4
+#  elsif level >= 5
+#    attack += 3
+#  elsif level >= 1
+#    attack += 2
+#  end
+#end
+
+def abilitybonus(level,ability,attack)
   if level >=9
     attack += 4
   elsif level >= 5
@@ -17,10 +27,6 @@ def levelbonus(level,attack)
   elsif level >= 1
     attack += 2
   end
-end
-
-def abilitybonus(level,ability,attack)
-  levelbonus(level,attack)
   if ability >=19
     attack += 5
   elsif ability >=17
