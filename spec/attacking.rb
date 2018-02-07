@@ -43,7 +43,7 @@ def hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
       puts "You hit for #{moddamage} damage."
   elsif puts "You miss"
   end
-    totaldamage += moddamage
+    totaldamage = totaldamage - moddamage
   puts"----------------- #{totaldamage}"
 end
 
@@ -53,7 +53,7 @@ end
   puts "Please enter Attack Ability score"
   ability = gets.to_i
   moddamage = 0
-  totaldamage = moddamage
+  totaldamage = 50
 5.times do
   attack = rand(16..20)
   damage = rand(1..8)
