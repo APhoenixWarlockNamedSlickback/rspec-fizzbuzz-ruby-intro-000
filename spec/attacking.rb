@@ -69,6 +69,6 @@ end
   attack = rand(16..20)
   damage = rand(1..8)
   attackrole(attack)
-  levelbonus(level,attack)
+  #levelbonus(level,attack)
   profbonus(level,attack,damage,ability,moddamage,totaldamage)
 end
