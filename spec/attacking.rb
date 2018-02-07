@@ -19,7 +19,7 @@ end
 #  end
 #end
 
-def attackbonus(level,ability,attack)
+def attackbonus(level,ability,attack,modattack)
   if level >=9
     modattack = attack + 4
   elsif level >= 5
