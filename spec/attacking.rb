@@ -21,11 +21,11 @@ end
 
 def attackbonus(level,ability,attack)
   if level >=9
-    attack += 4
+    modattack = attack + 4
   elsif level >= 5
-    attack += 3
+    modattack = attack + 3
   elsif level >= 1
-    attack += 2
+    modattack = attack + 2
   end
   if ability >=19
     attack += 5
