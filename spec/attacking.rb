@@ -89,7 +89,7 @@ end
   puts "Please enter Attack Ability score"
   ability = gets.to_i
   moddamage = 0
-  modattack = attack
+  modattack = 0
   totaldamage = 50
 5.times do
   attack = rand(16..20)
