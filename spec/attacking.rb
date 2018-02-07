@@ -50,7 +50,7 @@ def profbonus(level,attack,damage,ability,moddamage,totaldamage)
     #elsif level >= 1
     #  levelattack = attack + 2
     #end
-  abilitybonus(level,ability,attack)
+  attackbonus(level,ability,attack)
   #  if ability >=19
   #    modattack = 5
   #  elsif ability >=17
