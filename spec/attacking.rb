@@ -11,7 +11,7 @@ def critorfail?(attack)
   end
 end
 
-def profbonus(level,attack,damage,ability,moddamage,totaldamage)
+def profbonus(level,attack,fullattack,damage,ability,moddamage,totaldamage)
     if level >=9
       levelattack = attack + 4
     elsif level >= 5
@@ -58,7 +58,7 @@ end
   totaldamage = 50
   attack = rand(16..20)
   damage = rand(1..8)
-  profbonus(level,attack,damage,ability,moddamage,totaldamage)
+  profbonus(level,attack,fullattack,damage,ability,moddamage,totaldamage)
   attackrole(attack)
 5.times do
   #attack = rand(16..20)
