@@ -21,15 +21,15 @@ end
 
 def abilitybonus(ability,attack)
   if ability >=19
-    modattack = 5
+    attack += 5
   elsif ability >=17
-    modattack =4
+    attack += 4
   elsif ability >=15
-    modattack =3
+    attack += 3
   elsif ability >=13
-    modattack =2
+    attack += 2
   elsif ability >=11
-    modattack =1
+    attack += 1
   end
 end
 
@@ -42,18 +42,18 @@ def profbonus(level,attack,damage,ability,moddamage,totaldamage)
     #elsif level >= 1
     #  levelattack = attack + 2
     #end
-  abilitybonus(ability,attack)  
-    if ability >=19
-      modattack = 5
-    elsif ability >=17
-      modattack =4
-    elsif ability >=15
-      modattack =3
-    elsif ability >=13
-      modattack =2
-    elsif ability >=11
-      modattack =1
-    end
+  abilitybonus(ability,attack)
+  #  if ability >=19
+  #    modattack = 5
+  #  elsif ability >=17
+  #    modattack =4
+  #  elsif ability >=15
+  #    modattack =3
+  #  elsif ability >=13
+  #    modattack =2
+  #  elsif ability >=11
+  #    modattack =1
+  #  end
     fullattack = modattack + attack
     puts "Total Attack roll #{fullattack}"
     hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
