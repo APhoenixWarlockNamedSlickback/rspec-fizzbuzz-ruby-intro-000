@@ -19,6 +19,8 @@ def levelbonus(level,attack)
   end
 end
 
+def abilitybonus(ability,attack)
+
 def profbonus(level,attack,damage,ability,moddamage,totaldamage)
   levelbonus(level,attack)
     #if level >=9
