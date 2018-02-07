@@ -20,13 +20,13 @@ def levelbonus(level,levelattack)
 end
 
 def profbonus(level,attack,damage,ability,moddamage,totaldamage)
-    if level >=9
-      levelattack = attack + 4
-    elsif level >= 5
-      levelattack = attack + 3
-    elsif level >= 1
-      levelattack = attack + 2
-    end
+    #if level >=9
+    #  levelattack = attack + 4
+    #elsif level >= 5
+    #  levelattack = attack + 3
+    #elsif level >= 1
+    #  levelattack = attack + 2
+    #end
     if ability >=19
       modattack = 5
     elsif ability >=17
