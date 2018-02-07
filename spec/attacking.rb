@@ -31,6 +31,7 @@ def abilitybonus(ability,attack)
   elsif ability >=11
     attack += 1
   end
+  puts "Total Attack roll #{attack}"
 end
 
 def profbonus(level,attack,damage,ability,moddamage,totaldamage)
@@ -55,7 +56,7 @@ def profbonus(level,attack,damage,ability,moddamage,totaldamage)
   #    modattack =1
   #  end
     #fullattack = modattack + attack
-    puts "Total Attack roll #{attack}"
+    #puts "Total Attack roll #{attack}"
     hitmonster?(attack,damage,moddamage,totaldamage)
   end
 
