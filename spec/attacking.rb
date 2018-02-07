@@ -32,7 +32,7 @@ def profbonus(level,attack,damage,ability,moddamage,totaldamage)
     end
     fullattack = modattack + levelattack
     puts "Total Attack roll #{fullattack}"
-    #hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
+    hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
   end
 
 
