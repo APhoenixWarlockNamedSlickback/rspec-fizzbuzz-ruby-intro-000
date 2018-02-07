@@ -28,15 +28,15 @@ def attackbonus(level,ability,attack)
     modattack = attack + 2
   end
   if ability >=19
-    attack += 5
+    modattack = attack + 5
   elsif ability >=17
-    attack += 4
+    modattack = attack + 4
   elsif ability >=15
-    attack += 3
+    modattack = attack + 3
   elsif ability >=13
-    attack += 2
+    modattack = attack + 2
   elsif ability >=11
-    attack += 1
+    modattack = attack + 1
   end
   puts "Total Attack roll #{attack}"
 end
