@@ -1,0 +1,5 @@
+def hitmonster(attack)
+  10.times.map{20+ random.rand(20)}
+  end
+
+hitmonster(attack)
