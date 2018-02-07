@@ -20,6 +20,7 @@ def levelbonus(level,attack)
 end
 
 def abilitybonus(ability,attack)
+  levelbonus(level,attack)
   if ability >=19
     attack += 5
   elsif ability >=17
