@@ -9,13 +9,13 @@ def critorfail?(attack)
   end
 end
 
-def levelbonus(level,levelattack)
+def levelbonus(level,attack)
   if level >=9
-    levelattack = attack + 4
+    attack += 4
   elsif level >= 5
-    levelattack = attack + 3
+    attack += 3
   elsif level >= 1
-    levelattack = attack + 2
+    attack += 2
   end
 end
 
