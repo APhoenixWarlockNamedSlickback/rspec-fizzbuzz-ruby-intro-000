@@ -41,7 +41,7 @@ def attackbonus(level,ability,attack,modattack)
   puts "Total Attack roll #{attack}"
 end
 
-def profbonus(level,attack,damage,ability,moddamage,totaldamage)
+def profbonus(level,attack,modattack,damage,ability,moddamage,totaldamage)
   #levelbonus(level,attack)
     #if level >=9
     #  levelattack = attack + 4
