@@ -50,8 +50,9 @@ def profbonus(level,attack,modattack,damage,ability,moddamage,totaldamage)
     #elsif level >= 1
     #  levelattack = attack + 2
     #end
-  hitmonster?(attack,damage,moddamage,totaldamage)
   attackbonus(level,ability,attack,modattack)
+  hitmonster?(attack,damage,moddamage,totaldamage)
+  #attackbonus(level,ability,attack,modattack)
   #  if ability >=19
   #    modattack = 5
   #  elsif ability >=17
