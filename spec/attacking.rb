@@ -56,6 +56,8 @@ end
   ability = gets.to_i
   moddamage = 0
   totaldamage = 50
+  attack = rand(16..20)
+  damage = rand(1..8)
   profbonus(level,attack,damage,ability,moddamage,totaldamage)
 5.times do
   attack = rand(16..20)
