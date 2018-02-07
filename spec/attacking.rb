@@ -19,7 +19,7 @@ end
 #  end
 #end
 
-def abilitybonus(level,ability,attack)
+def attackbonus(level,ability,attack)
   if level >=9
     attack += 4
   elsif level >= 5
