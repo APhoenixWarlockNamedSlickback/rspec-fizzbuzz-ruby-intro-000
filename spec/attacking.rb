@@ -62,7 +62,7 @@ end
   attack = rand(1..20)
   damage = rand(1..8)
   attackrole(attack)
-  profbonus(level,attack,ability,fullattack)
+  profbonus(level,attack,ability)
   fullattack = modattack + levelattack
   puts "Total Attack roll #{fullattack}"
   hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
