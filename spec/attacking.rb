@@ -38,7 +38,7 @@ def profbonus(level,attack,damage,ability,moddamage,totaldamage)
 
 def hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
   #fullattack = modattack + levelattack
-  puts "Total Attack roll #{fullattack}"
+  #puts "Total Attack roll #{fullattack}"
   if critorfail?(attack)
     moddamage = (damage*2) + modattack
       puts "CRIT!! You hit for #{moddamage} damage!"
