@@ -62,10 +62,10 @@ def profbonus(level,attack,damage,ability,moddamage,totaldamage)
 
 def hitmonster?(attack,damage,moddamage,totaldamage)
   if critorfail?(attack)
-    moddamage = (damage*2) + modattack
+    moddamage = (damage*2) + attack
       puts "CRIT!! You hit for #{moddamage} damage!"
   elsif fullattack >= 15 && !critorfail?(attack)
-    moddamage = damage + modattack
+    moddamage = damage + attack
       puts "You hit for #{moddamage} damage."
   elsif puts "You miss"
   end
