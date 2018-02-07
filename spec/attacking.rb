@@ -59,11 +59,12 @@ end
   attack = rand(16..20)
   damage = rand(1..8)
   profbonus(level,attack,damage,ability,moddamage,totaldamage)
+  attackrole(attack)
 5.times do
   #attack = rand(16..20)
   #damage = rand(1..8)
-  attackrole(attack)
+  #attackrole(attack)
   #fullattack = modattack + levelattack
   #profbonus(level,attack,damage,ability,moddamage,totaldamage)
-  #hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
+  hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
 end
