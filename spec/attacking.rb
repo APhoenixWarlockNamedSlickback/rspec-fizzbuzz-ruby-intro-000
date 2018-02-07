@@ -60,8 +60,8 @@ end
   damage = rand(1..8)
   profbonus(level,attack,damage,ability,moddamage,totaldamage)
 5.times do
-  attack = rand(16..20)
-  damage = rand(1..8)
+  #attack = rand(16..20)
+  #damage = rand(1..8)
   attackrole(attack)
   #fullattack = modattack + levelattack
   #profbonus(level,attack,damage,ability,moddamage,totaldamage)
