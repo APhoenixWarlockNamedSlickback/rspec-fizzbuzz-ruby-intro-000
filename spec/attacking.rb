@@ -61,4 +61,5 @@ end
   damage = rand(1..8)
   attackrole(attack)
   profbonus(level,attack,damage,ability,moddamage,totaldamage)
+  hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
 end
