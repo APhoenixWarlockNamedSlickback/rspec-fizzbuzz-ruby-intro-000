@@ -1,5 +1,3 @@
-#attack = rand(1..20)
-
 def attackrole(attack)
   puts "Die roll #{attack}"
 end
@@ -11,7 +9,7 @@ def critorfail?(attack)
   end
 end
 
-def profbonus(level,attack,fullattack,damage,ability,moddamage,totaldamage)
+def profbonus(level,attack,damage,ability,moddamage,totaldamage)
     if level >=9
       levelattack = attack + 4
     elsif level >= 5
@@ -45,7 +43,7 @@ def hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
       puts "You hit for #{moddamage} damage."
   elsif puts "You miss"
   end
-    totaldamage = totaldamage - moddamage
+    totaldamage += moddamage
   puts"----------------- #{totaldamage}"
 end
 
@@ -55,17 +53,10 @@ end
   puts "Please enter Attack Ability score"
   ability = gets.to_i
   moddamage = 0
-  totaldamage = 50
+  totaldamage = moddamage
+5.times do
   attack = rand(16..20)
   damage = rand(1..8)
   attackrole(attack)
-  profbonus(level,attack,fullattack,damage,ability,moddamage,totaldamage)
-  #attackrole(attack)
-5.times do
-  #attack = rand(16..20)
-  #damage = rand(1..8)
-  #attackrole(attack)
-  #fullattack = modattack + levelattack
-  #profbonus(level,attack,damage,ability,moddamage,totaldamage)
-  hitmonster?(attack,fullattack,damage,modattack,moddamage,totaldamage)
+  profbonus(level,attack,damage,ability,moddamage,totaldamage)
 end
