@@ -54,14 +54,14 @@ end
   ability = gets.to_i
   moddamage = 0
   totaldamage = 50
-  attack = rand(1..20)
-  damage = rand(1..8)
-  attackrole(attack)
-  profbonus(level,attack,ability,fullattack)
-5.times do
   #attack = rand(1..20)
   #damage = rand(1..8)
   #attackrole(attack)
+  #profbonus(level,attack,ability,fullattack)
+5.times do
+  attack = rand(1..20)
+  damage = rand(1..8)
+  attackrole(attack)
   profbonus(level,attack,ability,fullattack)
 
 end
