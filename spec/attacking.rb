@@ -59,9 +59,9 @@ end
   attackrole(attack)
   profbonus(level,attack,ability,fullattack)
 5.times do
-  attack = rand(1..20)
-  damage = rand(1..8)
-  attackrole(attack)
+  #attack = rand(1..20)
+  #damage = rand(1..8)
+  #attackrole(attack)
   profbonus(level,attack,ability,fullattack)
 
 end
